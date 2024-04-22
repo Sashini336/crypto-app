@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto app track</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="two">
+      <h1>
+        Crypto Track
+        <span></span>
+      </h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="charts.html">Charts</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="input-group mb-4">
+        <input
+          type="text"
+          id="searchInput"
+          class="form-control"
+          placeholder="Search cryptocurrencies..."
+        />
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="button" id="searchButton">
+            Search
+          </button>
+        </div>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Logo</th>
+              <th>Name</th>
+              <th>Symbol</th>
+              <th>Price</th>
+              <th>Price Change</th>
+              <th>24h Volume</th>
+              <th>Market Cap</th>
+            </tr>
+          </thead>
+          <tbody id="cryptoTable"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

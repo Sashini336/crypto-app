@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charts</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div class="two">
+      <h1>
+        Crypto Track
+        <span></span>
+      </h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="charts.html">Charts</a></li>
+      </ul>
+    </nav>
+    <div class="select-crypto">
+      <select id="cryptoSelect" onchange="handleCryptoChange()">
+        <option>Choose crypto</option>
+        <option value="ETH">Ethereum (ETH)</option>
+        <option value="BTC">Bitcoin (BTC)</option>
+        <option value="SOL">Solana (SOL)</option>
+      </select>
+    </div>
+    <div class="interval">
+      <select id="intervalSelect" onchange="handleIntervalChange()">
+        <option>Choose time frame</option>
+        <option value="30">30 Days</option>
+        <option value="60">60 Days</option>
+        <option value="90">90 Days</option>
+      </select>
+    </div>
+    <div id="chart-container">
+      <div id="chart"></div>
+    </div>
+  </body>
+</html>
